@@ -1,0 +1,6 @@
+<h2>Original Url:</h2>
+<div class="field">
+<%= link_to @original_url %>
+</div>
+<h2>Shortened Url:</h2>
+<%= link_to @short_url, @short_url, target: :_blank, rel: [:noopener, :noreferrer], class: "field" %>
