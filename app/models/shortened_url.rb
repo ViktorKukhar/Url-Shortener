@@ -13,7 +13,7 @@ class ShortenedUrl < ApplicationRecord
 
   def generate_short_url
     #Rails.cache.fetch([cache_key, __method__], expires_in: get_ttl) do
-    
+   # = cache @shortened_urls do
     url = ([*("a".."z"),*("0".."9")]).sample(UNIQUE_ID_LENGTH).join
     old_url = ShortenedUrl.where(short_url: url).last
     if old_url.present?
@@ -21,7 +21,7 @@ class ShortenedUrl < ApplicationRecord
     else
       self.short_url = url
     end
-  #end
+ # end
   end
 
   def find_duplicate
