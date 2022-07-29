@@ -1,6 +1,6 @@
 class ShortenedUrlsController < ApplicationController
   before_action :find_url, only: [:show, :shortened]
-
+ 
   def index
     @url = ShortenedUrl.new
   end
@@ -10,6 +10,7 @@ class ShortenedUrlsController < ApplicationController
   end
 
   def create
+    
     @url = ShortenedUrl.new shortened_url_params
     @url.sanitize
     if @url.new_url?

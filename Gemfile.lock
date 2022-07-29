@@ -252,6 +252,7 @@ DEPENDENCIES
   redis (~> 4.0)
   sass (~> 3.4, >= 3.4.22)
   sass-rails
+  sassc-rails
   selenium-webdriver
   slim
   sprockets-rails
