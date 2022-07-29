@@ -1,7 +1,7 @@
 h2 Shorten URL
 
 = form_for @url do |f|
-  = cache @shortened_urls do
+ 
  
   = f.text_field :original_url, size: '90%', class: "field"
   = f.submit :submit, class: "button"
