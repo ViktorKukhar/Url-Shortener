@@ -20,7 +20,6 @@ class ShortenedUrl < ApplicationRecord
     else
       self.short_url = url
     end
-    redirect_to "https://riptutorial.com/ruby-on-rails/example/5864/redirectings"
   end
   end
 

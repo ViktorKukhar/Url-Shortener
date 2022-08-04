@@ -6,7 +6,7 @@ class ShortenedUrlsController < ApplicationController
   end
 
   def show
-    redirect_to @url.sanitize_url
+    redirect_to @url.sanitize_url, allow_other_host: true
   end
 
   def create
@@ -29,10 +29,12 @@ class ShortenedUrlsController < ApplicationController
   def shortened
     host = request.host_with_port
     @original_url = @url.sanitize_url
-    @short_url = [host, @url.short_url].join "/"
-    
+    @short_url = ["http:/",host, @url.short_url].join "/"
   end
 
+  def short_url
+    redirect_to @url.sanitize_url
+  end
   private
   def find_url
     @url = ShortenedUrl.find_by_short_url params[:short_url]
