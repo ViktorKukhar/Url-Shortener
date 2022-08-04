@@ -30,6 +30,7 @@ class ShortenedUrlsController < ApplicationController
     host = request.host_with_port
     @original_url = @url.sanitize_url
     @short_url = [host, @url.short_url].join "/"
+    
   end
 
   private
