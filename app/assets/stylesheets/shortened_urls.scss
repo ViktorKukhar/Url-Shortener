@@ -1,21 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+$roboto-slab: 'Montserrat';
+
+body{
+    background: rgb(238,174,202);
+    background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(173,210,255,1) 100%);
+}
+.absolute{
+    
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 h2{
     text-align: center;
     margin-bottom: 20px;
-   
+    font-family: $roboto-slab;
+    font-size: 30px;
+    color: rgb(63, 152, 182);
   
 }
 .field{
+    text-decoration: none;
+    color: rgb(68, 44, 53);
+    text-align: center;
+
     display: block;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    
-
+    border-style: none;
+    border-radius: 20px;
+    font-size: 20px;
+    width: 555px;
+    height: 40px;
     
 }
+.short{
+
+    text-decoration: none;
+    color: rgb(68, 44, 53);
+    text-align: center;
+    
+    font-size: 20px;
+    
+
+
+}
 .button{
+    font-family: $roboto-slab;
+    text-align: center;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 20px;
+    margin-top: 23px;
+    height: 30px;
+    width: 100px;
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    color: rgb(63, 152, 182);
+  
+}
+.field:focus {
+    outline: none !important;
 }

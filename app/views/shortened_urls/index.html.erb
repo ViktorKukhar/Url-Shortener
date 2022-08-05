@@ -1,9 +1,11 @@
+<div class="absolute">
 <h2> Shorten URL</h2>
 <%cache do%>
 <%= form_for @url do |f| %>
  
  
   <%= f.text_field :original_url, size: '90%', class: "field"%>
-  <%= f.submit :submit, class: "button"%>
+  <%= f.submit "Just do it", class: "button"%>
 <%end%>
 <%end%>
+</div>
