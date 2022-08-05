@@ -11,7 +11,7 @@ gem "rails", "~> 7.0.3", ">= 7.0.3.1"
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 
-gem 'clipboard-rails'
+
 
 
 # Use pg as the database for Active Record
@@ -38,7 +38,7 @@ gem 'rubocop', '~> 1.33'
  gem "redis", "~> 4.0"
  gem 'redis-store', '~> 1.1', '>= 1.1.7'
   gem 'redis-rails'
-  #gem 'hiredis', '~> 0.6.1'
+  gem 'hiredis', '~> 0.6.1'
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
 
